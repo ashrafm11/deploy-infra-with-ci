@@ -1,0 +1,11 @@
+---
+- name: update web server
+   # hosts: ubuntu
+   # Use the public IP if the VM is already created
+  hosts: web
+  user: ubuntu
+  become: true
+  become_method: sudo
+  become_user: root
+  roles:
+    - apache
