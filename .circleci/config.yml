@@ -65,3 +65,6 @@ workflows:
       - smoke_test: 
           requires:
             - configure_infrastructure
+      - destroy_environment:
+          requires:
+            - smoke_test
