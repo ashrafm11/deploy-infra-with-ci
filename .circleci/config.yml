@@ -27,6 +27,8 @@ jobs:
         - run:
             name: Run Playbook and Configure server
             command: |
+              ansible-playbook -i host mplay.yml
+              
 workflows:
   # Name the workflow
   myWorkflow:
