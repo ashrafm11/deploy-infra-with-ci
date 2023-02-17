@@ -43,7 +43,7 @@ jobs:
               ansible-playbook -i host mplay.yml
    smoke_test:
     docker:
-      - image: alpine:latest
+      - image: amazon/aws-cli
     steps:
       - run:
           name: Test job
